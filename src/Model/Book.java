@@ -20,7 +20,7 @@ public class Book {
     public Book() {
     }
 
-    public Book(double price, String bookName, String bookType, int quantity) {
+    public Book(String idBook, double price, String bookName, String bookType, int quantity) {
         this.idBook = Integer.toString(oID++);
         this.price = price;
         this.bookName = bookName;

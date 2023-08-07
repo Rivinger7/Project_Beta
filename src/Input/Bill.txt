@@ -1,0 +1,12 @@
+This is backup of invoice!
+
+Invoice [ID = null, 	Date = null
+ User = null
+ Customer = null
+ Total Books = 0]
+ Total Price = 0.0
+Invoice [ID = null, 	Date = null
+ User = null
+ Customer = null
+ Total Books = 0]
+ Total Price = 0.0
