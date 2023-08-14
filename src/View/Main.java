@@ -15,8 +15,8 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         String options[] = {
-            "Add a new item to the cart",
-            "Add a new customer",
+            "Add a new book to the storage",
+            "Remove a book in the storage",
             "Create an invoice",
             "Sort the invoice list by the customer name",
             "Search the invoice list",
@@ -25,7 +25,6 @@ public class Main {
 
         final String fileBook = "src\\Input\\ListOfBooks.txt";
         final String fileUser = "src\\Input\\ListOfUsers.txt";
-        final String fileInvoice = "src\\Input\\Bill.txt";
         final String fileAddingBook = "src\\Output\\ListOfBooks2.txt";
         final String fileAddingUser = "src\\Output\\ListOfUsers2.txt";
         int choice = 0;
@@ -41,26 +40,14 @@ public class Main {
             choice = Menu.getChoice(options);
             switch (choice) {
                 case 1:
-                    bookstore.addToCart();
+                    bookstore.writeFile(fileBook, bookstore.addBook());
                     break;
                 case 2:
-                    bookstore.addCustomer();
-                    
+                    bookstore.writeFile(fileBook, bookstore.removeBook());
                     break;
-                case 3:
-                    
-                    bookstore.bill(fileInvoice);
-
-                    break;
-//                case 5:
-//                    bookstore.writeFile(fileBook, bookstore.removeBook());
-//                    break;
-//                case 6:
-//                    bookstore.writeFile(fileBook, bookstore.addBook());
-//                    break;
                 default:
                     System.out.println("Good bye!");
             }
-        } while (choice > 0 && choice < 6);
+        } while (choice > 0 && choice < options.length + 1);
     }
 }

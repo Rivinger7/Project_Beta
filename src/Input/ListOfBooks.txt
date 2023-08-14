@@ -9,5 +9,3 @@
 9,ISBN 978-1008,Ingress,Anime,10,100
 10,ISBN 978-1009,Sonny Boy,Anime,12,100
 11,ISBN 978-1010,86－Eighty Six－,Anime,20,100
-12,ISBN 978-1011,0,0,0,0
-13,ISBN 978-1012,hoa anh dao,modern,12000,3
